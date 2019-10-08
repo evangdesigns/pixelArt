@@ -1,6 +1,7 @@
+import $ from 'jquery';
 import utils from '../../helpers/utilities';
 
-const colors = ['green', 'darkorchid', 'papayawhip', 'blanchalmond', 'tomato', 'cornsilk'];
+const colors = ['green', 'darkorchid', 'papayawhip', 'blanchedalmond', 'tomato', 'cornsilk'];
 
 const printColorPicker = () => {
   let domString = '';
@@ -18,4 +19,14 @@ const printColorPicker = () => {
   }
 };
 
-export default { printColorPicker };
+const paintPixel = (e) => {
+  const pixel = $(e.target);
+  const colorChoice = $('.colorChoice:checked').val();
+  pixel.css('backgroundColor', colorChoice);
+};
+
+const attachEvents = () => {
+  $(document).on('click', 'td', paintPixel);
+};
+
+export default { printColorPicker, attachEvents };
