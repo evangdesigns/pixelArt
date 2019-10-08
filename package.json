@@ -1,5 +1,5 @@
 {
-  "name": "webPack",
+  "name": "pixel",
   "version": "1.0.0",
   "description": "",
   "main": "src/javasripts/main.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evangdesigns/webPack.git"
+    "url": "git+https://github.com/evangdesigns/pixelArt.git"
   },
   "keywords": [],
   "author": "Chuck Norris",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/evangdesigns/webPack/issues"
+    "url": "https://github.com/evangdesigns/pixelArt/issues"
   },
-  "homepage": "https://github.com/evangdesigns/webPack#readme",
+  "homepage": "https://github.com/evangdesigns/pixelArt#readme",
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
   }
 }
