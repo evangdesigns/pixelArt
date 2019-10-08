@@ -1,11 +1,12 @@
 import 'bootstrap';
 import '../styles/main.scss';
 import grid from './components/grid/grid';
-import colorPicker from './components/paintbrush/paintbrush';
+import paintbrush from './components/paintbrush/paintbrush';
 
 const init = () => {
-  colorPicker.printColorPicker();
+  paintbrush.printColorPicker();
   grid.makeGrid();
+  paintbrush.attachEvents();
 };
 
 init();
